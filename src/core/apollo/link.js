@@ -37,7 +37,8 @@ export const exchange = from([
 export const blocklytics = from([
   new RetryLink(),
   new HttpLink({
-    uri: "https://api.thegraph.com/subgraphs/name/blocklytics/ethereum-blocks",
+    // uri: "https://api.thegraph.com/subgraphs/name/blocklytics/ethereum-blocks",
+    uri: "https://api.studio.thegraph.com/query/16478/rego-block/0.0.2",
     shouldBatch: true,
   }),
 ]);

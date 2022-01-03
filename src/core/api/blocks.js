@@ -38,9 +38,9 @@ export async function getOneDayBlock(client = getApollo()) {
     },
     fetchPolicy: "network-only",
   });
-  console.log("getOneDayBlock",{ number: Number("9887230") });
-  // return { number: Number(blocksData?.blocks[0].number) };
-  return { number: Number("9887230") };
+  console.log("getOneDayBlock", {number: Number(blocksData?.blocks[0].number)});
+  return { number: Number(blocksData?.blocks[0].number) };
+  // return { number: Number("9887230") };
 }
 
 export async function getTwoDayBlock(client = getApollo()) {
@@ -59,10 +59,10 @@ export async function getTwoDayBlock(client = getApollo()) {
     },
     fetchPolicy: "network-only",
   });
-  console.log("getTwoDayBlock", { number: Number(9880000) });
+  console.log("getTwoDayBlock",{ number: Number(blocksData?.blocks[0].number) });
 
-  // return { number: Number(blocksData?.blocks[0].number) };
-  return { number: Number(9880000) };
+  return { number: Number(blocksData?.blocks[0].number) };
+  // return { number: Number(9880000) };
 }
 
 export async function getSevenDayBlock(client = getApollo()) {
@@ -82,10 +82,10 @@ export async function getSevenDayBlock(client = getApollo()) {
     fetchPolicy: "network-only",
   });
 
-  console.log("getSevenDayBlock",  { number: Number(9860000) });
+  console.log("getSevenDayBlock",  { number: Number(blocksData?.blocks[0].number) });
 
-  // return { number: Number(blocksData?.blocks[0].number) };
-  return { number: Number(9860000) };
+  return { number: Number(blocksData?.blocks[0].number) };
+  // return { number: Number(9860000) };
 }
 
 export async function getAverageBlockTime(client = getApollo()) {
